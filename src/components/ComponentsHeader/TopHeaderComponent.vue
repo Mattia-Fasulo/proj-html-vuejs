@@ -44,7 +44,7 @@ export default {
 .my-container {
     @include center();
     color: $txt-grey;
-    background-color: $bg-top-head;
+    background-color: $dark;
     height: 50px;
     width: 100%;
 }
