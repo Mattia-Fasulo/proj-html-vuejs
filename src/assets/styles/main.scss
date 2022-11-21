@@ -10,7 +10,20 @@
 @import "@fontsource/poppins/800.css";
 @import "@fontsource/poppins/900.css";
 
-$fa-font-path: "./webfonts";
+$fa-font-path: "../webfonts";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
 @import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "@fortawesome/fontawesome-free/scss/solid.scss";
 @import "bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
