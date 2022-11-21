@@ -191,6 +191,10 @@ ul {
         a {
             color: $txt-grey;
         }
+
+        a:hover {
+            color: white;
+        }
     }
 }
 </style>
