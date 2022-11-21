@@ -2,11 +2,11 @@
     <div class="my-container">
         <div class="container">
             <div class="logo">
-                <img src="/svgs/svg-7.svg" alt="">
+                <img src="/svgs/svg-7.svg" alt="logo">
             </div>
             <div class="my-navbar">
-                <ListComponent :list="this.menuLink" />
-                <ButtonGreenComponent :text="'Get In Touch'" />
+                <ListHorizontal :list="this.menuLink" />
+                <ButtonGreen :text="'Get In Touch'" />
             </div>
 
         </div>
@@ -14,15 +14,15 @@
 </template>
 
 <script>
-import ButtonGreenComponent from '../ComponentsGeneral/ButtonGreenComponent.vue';
-import ListComponent from '../ComponentsGeneral/ListComponent.vue';
+import ButtonGreen from '../ComponentsGeneral/ButtonGreen.vue';
+import ListHorizontal from '../ComponentsGeneral/ListHorizontal.vue';
 
 
 export default {
     name: 'BotHeaderComponent',
     components: {
-        ListComponent,
-        ButtonGreenComponent
+        ListHorizontal,
+        ButtonGreen
     },
     data() {
         return {
@@ -80,6 +80,10 @@ export default {
 
 .my-navbar {
     @include center();
+
+    ul {
+        flex-flow: row;
+    }
 
     li {
         padding-left: 2rem;

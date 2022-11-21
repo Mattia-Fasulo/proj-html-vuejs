@@ -4,9 +4,9 @@
 
 <script>
 export default {
-    name: 'ButtonGreenComponent',
+    name: 'ButtonGreen',
     props: {
-        text: []
+        text: String
     }
 }
 </script>
@@ -17,6 +17,7 @@ export default {
 
 button {
     font-size: $txt-md;
+
     text-transform: uppercase;
     // font-weight: 500;
     color: white;
@@ -24,5 +25,11 @@ button {
     border: none;
     border-radius: 5px;
     padding: 0.5rem 2rem;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transform: scale(1.1);
+    }
 }
 </style>

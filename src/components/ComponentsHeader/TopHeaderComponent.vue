@@ -12,7 +12,7 @@
                         <i class="fa-solid fa-phone"></i><span> +1 (305) 1234-5678</span>
                     </li>
                     <li>
-                        <i class="fa-solid fa-envelope"></i> hello@example.com
+                        <i class="fa-solid fa-envelope"></i> <span> hello@example.com</span>
                     </li>
                     <li>
                         <i class="fa-brands fa-facebook-f"></i>
@@ -60,6 +60,7 @@ export default {
 
     ul {
         @include center();
+        flex-flow: row;
         margin-bottom: 0;
 
         li {
