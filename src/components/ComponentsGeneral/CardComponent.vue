@@ -1,7 +1,7 @@
 <template>
     <div class="my-card" v-for="(item, index) in obj" :key="index">
-        <img :src="item.img" :alt="item.title">
-        <h3>{{ item.title }}</h3>
+        <img v-if="item.img" :src="item.img" :alt="item.title">
+        <h3><span v-if="item.icon" :class="item.icon"></span> {{ item.title }}</h3>
         <p>{{ item.text }}</p>
         <i class="fa-solid fa-arrow-right"></i>
     </div>
@@ -11,7 +11,7 @@
 export default {
     name: 'CardComponent',
     props: {
-        obj: Object
+        obj: String
     }
 }
 </script>
@@ -43,11 +43,8 @@ export default {
     }
 
     i {
-        font-size: 1.5rem;
-        color: $txt-green;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
+        display: none;
     }
+
 }
 </style>
