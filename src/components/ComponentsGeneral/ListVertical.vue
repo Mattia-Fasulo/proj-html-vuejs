@@ -3,7 +3,7 @@
         <ul>
             <h3 v-if="title">{{ title }}</h3>
             <li v-for="(link, index) in list" :key="index">
-                <i class="fa-regular fa-angle-right"></i><a :href="link.url">{{ link.text }}</a>
+                <i class="fa-regular fa-angle-right"></i><a :href="link.url">{{ link.title }}</a>
             </li>
 
         </ul>

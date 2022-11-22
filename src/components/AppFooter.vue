@@ -11,13 +11,13 @@
                     <ButtonGreen :text="'Get In Touch'" />
                 </div>
                 <div class="footer-list">
-                    <ListVertical :title="titleMenuOne" :list="linkMenuOne" />
+                    <ListVertical :title="store.titleMenuOne" :list="store.linkMenuOne" />
                 </div>
                 <div class="footer-list">
-                    <ListVertical :title="titleMenuTwo" :list="linkMenuTwo" />
+                    <ListVertical :title="store.titleMenuTwo" :list="store.linkMenuTwo" />
                 </div>
                 <div class="footer-list">
-                    <ListVertical :title="titleMenuThree" :list="linkMenuThree" />
+                    <ListVertical :title="store.titleMenuThree" :list="store.linkMenuThree" />
                 </div>
 
             </div>
@@ -29,6 +29,8 @@
 import ButtonGreen from './ComponentsGeneral/ButtonGreen.vue';
 import ListVertical from './ComponentsGeneral/ListVertical.vue';
 
+import { store } from '../store';
+
 export default {
     name: 'AppFooter',
     components: {
@@ -37,87 +39,7 @@ export default {
     },
     data() {
         return {
-            titleMenuOne: 'About',
-            linkMenuOne: [
-                {
-                    text: 'The Company',
-                    url: '#'
-                },
-                {
-                    text: 'Instituzional',
-                    url: '#'
-                },
-                {
-                    text: 'Social & Events',
-                    url: '#'
-                },
-                {
-                    text: 'Innovation',
-                    url: '#'
-                },
-                {
-                    text: 'Environment',
-                    url: '#'
-                },
-                {
-                    text: 'Technology',
-                    url: '#'
-                }
-            ],
-            titleMenuTwo: 'Services',
-            linkMenuTwo: [
-                {
-                    text: 'Audite & Assurance',
-                    url: '#'
-                },
-                {
-                    text: 'Financial Advisory',
-                    url: '#'
-                },
-                {
-                    text: 'Analytics M&A',
-                    url: '#'
-                },
-                {
-                    text: 'Middle Marketing',
-                    url: '#'
-                },
-                {
-                    text: 'Legal Consulting',
-                    url: '#'
-                },
-                {
-                    text: 'Regulatory Risk',
-                    url: '#'
-                }
-            ],
-            titleMenuThree: 'Support',
-            linkMenuThree: [
-                {
-                    text: 'Responsibility',
-                    url: '#'
-                },
-                {
-                    text: 'Terms of Use',
-                    url: '#'
-                },
-                {
-                    text: 'About Cookies',
-                    url: '#'
-                },
-                {
-                    text: 'Privacy Policy',
-                    url: '#'
-                },
-                {
-                    text: 'Accesibility',
-                    url: '#'
-                },
-                {
-                    text: 'Information',
-                    url: '#'
-                }
-            ]
+            store,
         }
     }
 }
