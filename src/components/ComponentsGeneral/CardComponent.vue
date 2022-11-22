@@ -11,7 +11,7 @@
 export default {
     name: 'CardComponent',
     props: {
-        obj: String
+        obj: Array
     }
 }
 </script>

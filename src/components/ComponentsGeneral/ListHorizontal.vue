@@ -3,7 +3,7 @@
         <ul>
             <h3 v-if="title">{{ title }}</h3>
             <li v-for="(link, index) in list" :key="index">
-                <a :href="link.url">{{ link.text }}</a>
+                <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
             </li>
 
         </ul>
