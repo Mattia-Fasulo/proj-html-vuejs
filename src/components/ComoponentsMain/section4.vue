@@ -6,15 +6,6 @@
             <ListHorizontal :list="this.menuLink" />
             <div class="cards-section4">
                 <CardImage :obj="this.cards" />
-
-                <!-- <div class="card-image">
-                    <img src="/images/project-1.jpg" alt="">
-                    <div class="over">
-                        <span>Academic professional program in social media</span>
-                    </div>
-                </div> -->
-
-
             </div>
         </div>
     </section>
