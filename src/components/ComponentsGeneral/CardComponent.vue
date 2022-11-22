@@ -43,7 +43,11 @@ export default {
     }
 
     i {
-        display: none;
+        color: $txt-green;
+        font-size: 2rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
     }
 
 }

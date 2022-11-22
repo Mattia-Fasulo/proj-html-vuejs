@@ -8,7 +8,9 @@
             </div>
         </div>
         <div class="section5-bot">
-
+            <div class="container">
+                <ListHorizontal :list="logos" />
+            </div>
         </div>
 
     </section>
@@ -42,6 +44,26 @@ export default {
                     text: "Countries Served",
                     ulr: "#",
                     num: 94
+                }
+            ],
+            logos: [
+                {
+                    img: '/images/logo-1.png'
+                },
+                {
+                    img: '/images/logo-2.png'
+                },
+                {
+                    img: '/images/logo-3.png'
+                },
+                {
+                    img: '/images/logo-4.png'
+                },
+                {
+                    img: '/images/logo-5.png'
+                },
+                {
+                    img: '/images/logo-1.png'
                 }
             ]
         };
@@ -101,19 +123,33 @@ export default {
                 padding: 0 4rem;
 
                 p {
-                    font-size: 2rem;
+                    font-size: 4rem;
                     font-weight: 600;
                     color: $txt-green;
                 }
 
                 a {
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                     color: white;
                     font-weight: 600;
                 }
             }
         }
 
+    }
+
+    .container:last-child {
+        height: 100%;
+        @include center();
+
+        ul {
+            li {
+                img {
+                    padding: 0 2rem;
+                    filter: invert(100%);
+                }
+            }
+        }
     }
 
     .section5-bot {

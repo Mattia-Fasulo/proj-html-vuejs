@@ -148,6 +148,10 @@ export default {
             span {
                 color: $btn-green;
             }
+
+            i {
+                display: none;
+            }
         }
 
     }

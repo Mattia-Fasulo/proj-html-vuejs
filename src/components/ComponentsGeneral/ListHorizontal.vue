@@ -3,8 +3,9 @@
         <ul>
             <h3 v-if="title">{{ title }}</h3>
             <li v-for="(link, index) in list" :key="index">
+                <img v-if="link.img" :src="link.img" :alt="'logo' + index">
                 <p v-if="link.num">{{ link.num }}</p>
-                <a :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
+                <a v-if="link.text" :href="link.url" :class="{ 'active': link.current }">{{ link.text }}</a>
             </li>
 
         </ul>

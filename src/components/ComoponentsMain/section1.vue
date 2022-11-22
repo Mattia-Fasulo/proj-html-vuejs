@@ -31,7 +31,7 @@ export default {
     @include center();
     position: relative;
     width: 100%;
-    height: 665px;
+    height: calc(100vh - 150px);
 
     .text-jumbo {
         z-index: 1;
@@ -83,7 +83,7 @@ export default {
     z-index: 0;
     position: absolute;
     top: -35px;
-    height: 700px;
+    height: 820px;
     width: 100%;
     background-image: url('/images/bg-parallax.png');
     background-position: center;

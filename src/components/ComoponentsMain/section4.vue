@@ -114,7 +114,7 @@ export default {
 
         h2 {
             margin-top: 2rem;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 900;
 
             span {

@@ -25,7 +25,7 @@ export default {
     border-radius: 5px;
     overflow: hidden;
     width: calc((100% - 4rem) / 3);
-    height: 250px;
+    height: 350px;
 
     img {
         width: 100%;
