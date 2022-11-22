@@ -14,7 +14,7 @@
 export default {
     name: 'ListVertical',
     props: {
-        title: [],
+        title: String,
         list: {}
     }
 }

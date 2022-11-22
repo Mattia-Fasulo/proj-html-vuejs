@@ -62,6 +62,7 @@ export default {
     color: $dark;
     height: 100px;
     width: 100%;
+
 }
 
 .container {
@@ -94,6 +95,10 @@ export default {
             text-transform: uppercase;
             font-size: $txt-md;
             // font-weight: 500;
+        }
+
+        a:hover {
+            color: black;
         }
     }
 

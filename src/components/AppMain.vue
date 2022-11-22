@@ -1,12 +1,17 @@
 <template>
     <main>
-        <h1>I'Main</h1>
+        <Section1 />
     </main>
 </template>
 
 <script>
+import Section1 from './ComoponentsMain/section1.vue';
+
 export default {
-    name: 'AppMain'
+    name: "AppMain",
+    components: {
+        Section1
+    }
 }
 </script>
 
