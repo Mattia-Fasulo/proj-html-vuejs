@@ -34,6 +34,7 @@ export default {
     height: 665px;
 
     .text-jumbo {
+        z-index: 1;
         @include center ();
         flex-flow: column;
         padding: 2rem;
@@ -64,6 +65,7 @@ export default {
                 font-size: 1rem;
                 padding: 0.5rem 1rem;
             }
+
         }
 
         button:last-child {
@@ -78,7 +80,7 @@ export default {
 }
 
 .jumbotron {
-    z-index: 1000;
+    z-index: 0;
     position: absolute;
     top: -35px;
     height: 700px;
