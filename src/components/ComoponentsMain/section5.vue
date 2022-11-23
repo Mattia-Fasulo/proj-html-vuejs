@@ -78,7 +78,7 @@ export default {
 
 .section5 {
     width: 100%;
-    height: 1100px;
+    height: max-content;
 
     .section5-top {
         padding-top: 8rem;

@@ -53,7 +53,11 @@ export default {
         width: 100%;
         gap: 1.5rem;
 
-
+        .my-card {
+            p {
+                width: 100%;
+            }
+        }
     }
 }
 
