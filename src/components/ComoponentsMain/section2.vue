@@ -64,7 +64,7 @@ export default {
 .section2 {
     width: 100%;
     height: max-content;
-    background-color: $bg-section2;
+    background-color: rgba(128, 128, 128, 0.122);
 }
 
 

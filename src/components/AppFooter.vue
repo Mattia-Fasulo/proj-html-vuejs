@@ -54,7 +54,8 @@ footer {
     color: $txt-grey;
     width: 100%;
     height: 500px;
-    background-color: $bg-footer;
+    background-color: transparent;
+    background-image: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
 }
 
 .my-row {
@@ -69,12 +70,14 @@ footer {
     flex-flow: column;
     width: calc((100% / 4));
     height: 330px;
-    background-color: $bg-list-footer;
+    background-color: rgba(0, 0, 0, 0.153);
+    // background-image: linear-gradient(-95deg, #1b49659e 20%, #0d1b2a79 100%);
     border-radius: 5px;
 
     &:first-child {
         padding: 0;
-        background-color: $bg-footer;
+        background-color: transparent;
+        background-image: none;
     }
 
     img {
@@ -98,7 +101,7 @@ footer {
         margin-top: 1.5rem;
         width: max-content;
         border: 1px solid $btn-green;
-        background-color: $bg-footer;
+        background-color: transparent;
     }
 
 }

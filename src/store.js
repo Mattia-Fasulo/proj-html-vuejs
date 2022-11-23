@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
-
+    scrollPage: false,
     titleMenuOne: 'About',
     titleMenuTwo: 'Services',
     titleMenuThree: 'Support',

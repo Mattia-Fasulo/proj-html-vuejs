@@ -44,7 +44,8 @@ export default {
 .my-container {
     @include center();
     color: $txt-grey;
-    background-color: $dark;
+    background-color: transparent;
+    background-image: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
     height: 50px;
     width: 100%;
 }

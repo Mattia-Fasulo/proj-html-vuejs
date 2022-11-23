@@ -1,7 +1,7 @@
 <template>
     <section class="section1">
-        <div class="jumbotron">
-        </div>
+        <!-- <div class="jumbotron">
+        </div> -->
         <div class="text-jumbo">
             <h1>Ready <span>Team</span></h1>
             <p>No matter what your company needs, we will be ready to assist you in the best possible way.</p>
@@ -31,7 +31,10 @@ export default {
     @include center();
     position: relative;
     width: 100%;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 50px);
+    background-image: url('/images/bg-parallax.png');
+    background-position: center;
+    background-position-y: -120px;
 
     .text-jumbo {
         z-index: 1;

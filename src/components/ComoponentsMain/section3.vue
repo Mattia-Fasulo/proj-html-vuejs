@@ -87,7 +87,8 @@ export default {
 
 .section3 {
     position: relative;
-    background-color: $bg-footer;
+    background-color: transparent;
+    background-image: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
     height: max-content;
 
     .container {
@@ -136,7 +137,7 @@ export default {
 
         .my-card {
             padding: 0;
-            background-color: $bg-footer;
+            background-color: transparent;
             color: white;
             width: calc((100%) / 2);
             margin-left: 0;
@@ -166,7 +167,7 @@ export default {
         button:last-child {
             margin-left: 1rem;
             color: $btn-green;
-            background-color: $bg-footer;
+            background-color: transparent;
             border: 1px solid $btn-green;
 
         }

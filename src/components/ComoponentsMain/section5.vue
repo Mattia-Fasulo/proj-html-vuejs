@@ -155,7 +155,8 @@ export default {
     .section5-bot {
         width: 100%;
         height: 300px;
-        background-color: $bg-footer;
+        background-color: transparent;
+        background-image: linear-gradient(-45deg, #1b4965 0%, #0d1b2a 100%);
     }
 }
 </style>
