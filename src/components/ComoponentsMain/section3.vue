@@ -4,7 +4,6 @@
 
         <div class="container">
             <div class="text-section3">
-                <span>Our Business Areas</span>
                 <h2><span>The</span> Company</h2>
                 <div class="my-flex">
                     <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and
@@ -14,19 +13,17 @@
                 <div class="cards-section3">
                     <CardComponent :obj="this.list" />
                 </div>
-                <div class="my-flex">
-                    <ButtonGreen :text="'Get in Touch'" />
-                    <ButtonGreen :text="'Read More'" />
-                </div>
+
             </div>
 
         </div>
 
-
-
         <div class="bg-img">
-            <img src="/images/about-4.jpg" alt="man">
+
         </div>
+
+
+
         <div class="svg-top">
             <img src="/images/bullets.png" alt="bullets">
         </div>
@@ -157,21 +154,6 @@ export default {
 
     }
 
-    .my-flex {
-        display: flex;
-
-        button {
-            padding: 0.5rem 1rem;
-        }
-
-        button:last-child {
-            margin-left: 1rem;
-            color: $btn-green;
-            background-color: transparent;
-            border: 1px solid $btn-green;
-
-        }
-    }
 }
 
 
@@ -183,12 +165,14 @@ export default {
     width: 50%;
     height: 100%;
     background-color: white;
+    background-image: url('/images/about-4.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% -15%;
+    background-size: 50%;
 
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+
+
 }
 
 .svg-top,

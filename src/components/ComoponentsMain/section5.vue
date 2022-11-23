@@ -86,8 +86,9 @@ export default {
         height: 600px;
         background-image: url('/images/bg-7.jpg');
         background-size: cover;
-        background-position-y: -200px;
+        background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
 
         .container {
             flex-flow: column;
