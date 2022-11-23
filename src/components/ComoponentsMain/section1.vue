@@ -1,25 +1,97 @@
 <template>
     <section class="section1">
-        <!-- <div class="jumbotron">
-        </div> -->
-        <div class="text-jumbo">
-            <h1>Ready <span>Team</span></h1>
-            <p>No matter what your company needs, we will be ready to assist you in the best possible way.</p>
-            <div class="btn-jumbo">
-                <ButtonGreen :text="'Get In Touch'" />
-                <ButtonGreen :text="'Read More'" />
-            </div>
-        </div>
+
+        <swiper :style="{
+            '--swiper-navigation-color': '#c0c3d0',
+            '--swiper-pagination-color': '#c0c3d0',
+        }" :speed="600" :parallax="true" :pagination="{ clickable: true }" :navigation="true" :modules="modules"
+            class="mySwiper">
+            <div slot="container-start" class="parallax-bg" data-swiper-parallax="-60%"></div>
+            <swiper-slide class="swiper1">
+                <div class="content1">
+                    <div class="title" data-swiper-parallax="-300">
+                        <h2>We Share <span>Good Ideas</span></h2>
+                    </div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            dictum mattis velit.
+                        </p>
+                    </div>
+                    <ButtonGreen :text="'Get In Touch'" />
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="content2">
+                    <div class="title" data-swiper-parallax="-300">
+                        <h2>Ready <span>Team</span></h2>
+                    </div>
+
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            dictum mattis velit.
+                        </p>
+                    </div>
+                    <ButtonGreen :text="'Get In Touch'" />
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper3">
+                <div class="content3">
+                    <div class="title" data-swiper-parallax="-300">
+                        <h2>Talk to a <span>Consultant</span></h2>
+                    </div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            dictum mattis velit.
+                        </p>
+                    </div>
+                    <ButtonGreen :text="'Get In Touch'" />
+                </div>
+            </swiper-slide>
+        </swiper>
 
     </section>
 </template>
 
 <script>
 import ButtonGreen from '../ComponentsGeneral/ButtonGreen.vue';
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+
+
+import { Parallax, Pagination, Navigation } from "swiper";
+
 
 export default {
     name: "section1",
-    components: { ButtonGreen }
+    components: {
+        ButtonGreen,
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+        return {
+            modules: [Parallax, Pagination, Navigation],
+        };
+    },
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+
+    },
+    mounted() {
+
+    },
 }
 </script>
 
@@ -32,64 +104,107 @@ export default {
     position: relative;
     width: 100%;
     height: calc(100vh - 50px);
-    background-image: url('/images/bg-parallax.png');
-    background-position: center;
-    background-position-y: -120px;
 
-    .text-jumbo {
-        z-index: 1;
-        @include center ();
-        flex-flow: column;
-        padding: 2rem;
-        width: 600px;
-        text-align: center;
+}
 
-        h1 {
-            font-size: 4rem;
-            font-weight: 900;
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: white;
 
-            span {
-                background-color: #0583832f;
-                padding: 0 1rem;
-                color: $btn-green;
-            }
-        }
+    &:hover {
+        cursor: e-resize;
+    }
 
-        p {
-            color: $dark;
-            width: 400px;
-            margin-top: 2rem;
-        }
+    h2 {
+        line-height: 8rem;
+        color: #20333e;
+        width: 60%;
+        font-size: 5rem;
+        font-weight: 700;
 
-        .btn-jumbo {
-            margin-top: 2rem;
-
-            button {
-                font-size: 1rem;
-                padding: 0.5rem 1rem;
-            }
-
-        }
-
-        button:last-child {
-            background-color: white;
+        span {
+            position: relative;
+            padding: 0 10px;
+            margin-left: -10px;
             color: $btn-green;
-            border: 1px solid $btn-green;
-            margin-left: 1.5rem;
+            background-color: #26aeae2a;
+            border-radius: 5px;
         }
     }
 
-
+    p {
+        line-height: 2.5rem;
+        font-size: 1.4rem;
+        width: 600px
+    }
 }
 
-.jumbotron {
-    z-index: 0;
-    position: absolute;
-    top: -35px;
-    height: 820px;
-    width: 100%;
+.swiper-slide {
+    @include center();
+    flex-flow: column;
+    color: gray;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+
+    .content1 {
+        margin-left: 200px;
+    }
+
+    .content2 {
+        text-align: center;
+
+        h2 {
+            width: 600px;
+        }
+    }
+}
+
+.parallax-bg {
     background-image: url('/images/bg-parallax.png');
+    overflow: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: 130%;
     background-position: center;
-    background-position-y: -180px;
+    background-position-x: 0px;
 }
+
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+    font-size: 21px;
+}
+
+.swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.swiper1 {
+    align-items: flex-start;
+}
+
+.swiper3 {
+    align-items: flex-end;
+}
+
+
+// .background {
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: -1;
+// }
 </style>

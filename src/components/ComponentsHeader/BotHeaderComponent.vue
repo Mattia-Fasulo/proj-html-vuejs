@@ -69,7 +69,6 @@ export default {
         window.addEventListener('scroll', function (e) {
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 store.scrollPage = true;
-                console.log(store.scrollPage)
             }
             else {
                 store.scrollPage = false;
@@ -136,10 +135,10 @@ export default {
         }
 
         a:hover {
-            color: black;
+            color: #058283;
 
             span {
-                color: black;
+                color: #058283;
             }
         }
 
