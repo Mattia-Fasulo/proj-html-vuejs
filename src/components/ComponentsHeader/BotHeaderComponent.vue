@@ -35,23 +35,28 @@ export default {
             menuLink: [
                 {
                     text: 'Home',
-                    url: '#'
+                    url: '#',
+                    icon: 'fa-solid fa-angle-down'
                 },
                 {
                     text: 'Services',
-                    url: '#'
+                    url: '#',
+                    icon: 'fa-solid fa-angle-down'
                 },
                 {
                     text: 'About',
-                    url: '#'
+                    url: '#',
+                    icon: 'fa-solid fa-angle-down'
                 },
                 {
                     text: 'Projects',
-                    url: '#'
+                    url: '#',
+                    icon: 'fa-solid fa-angle-down'
                 },
                 {
                     text: 'Result',
-                    url: '#'
+                    url: '#',
+                    icon: 'fa-solid fa-angle-down'
                 }
             ]
         }
@@ -118,16 +123,26 @@ export default {
         padding-left: 2rem;
 
         a {
-            color: $txt-grey;
+            color: gray;
             text-decoration: none;
             text-transform: uppercase;
             font-size: $txt-md;
             // font-weight: 500;
         }
 
+        span {
+            margin-left: 5px;
+            color: gray;
+        }
+
         a:hover {
             color: black;
+
+            span {
+                color: black;
+            }
         }
+
     }
 
     button {
@@ -141,5 +156,24 @@ export default {
     position: fixed;
     top: 0;
     width: 100%;
+
+    li {
+        a {
+            color: $txt-grey;
+
+            span {
+                color: $txt-grey;
+            }
+
+            &:hover {
+                color: $txt-green;
+
+                span {
+                    color: $txt-green;
+                }
+
+            }
+        }
+    }
 }
 </style>
