@@ -5,7 +5,7 @@
             '--swiper-navigation-color': '#c0c3d0',
             '--swiper-pagination-color': '#c0c3d0',
         }" :speed="600" :parallax="true" :pagination="{ clickable: true }" :navigation="true" :modules="modules"
-            class="mySwiper">
+            :initial-slide="1" class="mySwiper">
             <div slot="container-start" class="parallax-bg" data-swiper-parallax="-60%"></div>
             <swiper-slide class="swiper1">
                 <div class="content1">
@@ -158,6 +158,10 @@ export default {
         h2 {
             width: 600px;
         }
+    }
+
+    .content3 {
+        margin-right: -75px;
     }
 }
 
