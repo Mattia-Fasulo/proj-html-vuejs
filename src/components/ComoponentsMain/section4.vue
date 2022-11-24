@@ -2,9 +2,9 @@
     <section class="section4">
         <div class="container">
             <h2>Actions & <span>Projects</span></h2>
-            <ListHorizontal :list="this.menuLink" />
+            <ListHorizontal :list="store.linkMenuSection4" />
             <div class="cards-section4">
-                <CardImage :obj="this.cards" />
+                <CardImage :obj="findCard" />
             </div>
         </div>
     </section>
@@ -21,78 +21,9 @@ export default {
     data() {
         return {
             store,
-            activeLink: 0,
-            menuLink: [
-                {
-                    id: 0,
-                    text: "All",
-                    url: "#",
-                    current: true
-                },
-                {
-                    id: 1,
-                    text: "Istitutional",
-                    url: "#",
-                    current: false
-                },
-                {
-                    id: 3,
-                    text: "Social",
-                    url: "#",
-                    current: false
-                },
-                {
-                    id: 4,
-                    text: "Events",
-                    url: "#",
-                    current: false
-                },
-                {
-                    id: 5,
-                    text: "Innovation",
-                    url: "#",
-                    current: false
-                },
-                {
-                    id: 6,
-                    text: "Environment",
-                    url: "#",
-                    current: false
-                },
-                {
-                    id: 7,
-                    text: "Technology",
-                    url: "#",
-                    current: false
-                }
-            ],
-            cards: [
-                {
-                    text: "Academic professional program in social media",
-                    url: "/images/project-1.jpg",
-                },
-                {
-                    text: "President's speech at the annual meeting",
-                    url: "/images/project-2.jpg",
-                },
-                {
-                    text: "International business trip in Shanghai",
-                    url: "/images/project-3.jpg",
-                },
-                {
-                    text: "Techonology workshop with education theme",
-                    url: "/images/project-4.jpg",
-                },
-                {
-                    text: "Donation of clothes and food to the partener NGO",
-                    url: "/images/project-5.jpg",
-                },
-                {
-                    text: "Confraternization of the procurement team",
-                    url: "/images/project-6.jpg",
-                },
+            searchClass: 1,
 
-            ]
+
         };
     },
     components: {
@@ -102,6 +33,15 @@ export default {
     methods: {
 
     },
+    computed: {
+        findCard() {
+            return store.cardsSection4.filter((item) => {
+                const card = item.categ;
+                return card.includes(store.searchClass);
+            })
+        }
+    }
+
 }
 </script>
 
@@ -158,6 +98,7 @@ export default {
 
     .cards-section4 {
         @include center();
+        justify-content: flex-start;
         flex-wrap: wrap;
         gap: 2rem;
         height: max-content;

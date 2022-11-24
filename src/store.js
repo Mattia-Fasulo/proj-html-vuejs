@@ -5,6 +5,7 @@ export const store = reactive({
     titleMenuOne: 'About',
     titleMenuTwo: 'Services',
     titleMenuThree: 'Support',
+    searchClass: 'a',
     linkMenuOne: [
         {
             title: 'The Company',
@@ -106,6 +107,83 @@ export const store = reactive({
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             url: '#'
         }
+    ],
+    linkMenuSection4: [
+        {
+            id: 0,
+            text: "All",
+            url: "#",
+            current: true
+        },
+        {
+            id: 1,
+            text: "Istitutional",
+            url: "#",
+            current: false
+        },
+        {
+            id: 3,
+            text: "Social",
+            url: "#",
+            current: false
+        },
+        {
+            id: 4,
+            text: "Events",
+            url: "#",
+            current: false
+        },
+        {
+            id: 5,
+            text: "Innovation",
+            url: "#",
+            current: false
+        },
+        {
+            id: 6,
+            text: "Environment",
+            url: "#",
+            current: false
+        },
+        {
+            id: 7,
+            text: "Technology",
+            url: "#",
+            current: false
+        }
+    ],
+    cardsSection4: [
+        {
+            categ: 'abc',
+            text: "Academic professional program in social media",
+            url: "/images/project-1.jpg",
+        },
+        {
+            categ: 'ab',
+            text: "President's speech at the annual meeting",
+            url: "/images/project-2.jpg",
+        },
+        {
+            categ: 'ac',
+            text: "International business trip in Shanghai",
+            url: "/images/project-3.jpg",
+        },
+        {
+            categ: 'ac',
+            text: "Techonology workshop with education theme",
+            url: "/images/project-4.jpg",
+        },
+        {
+            categ: 'abc',
+            text: "Donation of clothes and food to the partener NGO",
+            url: "/images/project-5.jpg",
+        },
+        {
+            categ: 'ac',
+            text: "Confraternization of the procurement team",
+            url: "/images/project-6.jpg",
+        },
+
     ]
 
 

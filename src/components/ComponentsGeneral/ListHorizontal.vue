@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import { store } from '../../store';
+
 export default {
     name: 'ListHorizontal',
     props: {
@@ -36,6 +38,20 @@ export default {
                 return
             }
             this.activeLink = id;
+
+            if (id === 0) {
+                store.searchClass = 'a'
+                // console.log('ciao')
+            }
+            else if ((id === 1) || (id === 3)) {
+                store.searchClass = 'ac'
+            }
+            else if ((id === 2) || (id === 4)) {
+                store.searchClass = 'c'
+            }
+            else if ((id === 5) || (id === 7)) {
+                store.searchClass = 'b'
+            }
 
 
         }
