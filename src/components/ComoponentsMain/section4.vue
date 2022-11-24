@@ -123,13 +123,13 @@ export default {
 
             li {
                 a {
-                    color: grey;
+                    color: $txt-d-grey;
                     padding: 0 1.5rem;
                     font-size: 1.2rem;
                     text-transform: uppercase;
 
                     &:hover {
-                        color: $dark;
+                        color: $btn-green;
                     }
 
                     &.active {

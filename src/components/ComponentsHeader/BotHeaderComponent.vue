@@ -265,11 +265,13 @@ export default {
     }
 
     button {
+        font-weight: 500;
         margin-left: 2rem;
         background-color: #0583832f;
         color: $btn-green;
         border-radius: 20px;
         padding: 0.5rem 1rem;
+
     }
 }
 
@@ -297,6 +299,11 @@ export default {
 
             }
         }
+    }
+
+    button {
+        background-color: rgba(219, 219, 219, 0.17);
+        color: $txt-grey;
     }
 }
 </style>
