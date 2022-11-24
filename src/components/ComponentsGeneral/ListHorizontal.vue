@@ -5,8 +5,9 @@
             <li v-for="(link, index) in list" :key="index">
                 <img v-if="link.img" :src="link.img" :alt="'logo' + index">
                 <p v-if="link.num">{{ link.num }}</p>
-                <a v-if="link.text" :href="link.url" :class="{ 'active': link.current }">{{ link.text }} <span
-                        v-if="link.icon" :class="link.icon"></span> </a>
+                <a @click.prevent="this.setLink(link.id)" v-if="link.text" :href="link.url"
+                    :class="{ active: link.id === activeLink }">{{ link.text }} <span v-if="link.icon"
+                        :class="link.icon"></span> </a>
                 <ul v-if="link.drop" class="drop-down">
                     <li v-for="(link, index) in link.drop"><a href="">{{ link.text }}</a></li>
                 </ul>
@@ -22,7 +23,23 @@ export default {
     props: {
         title: [],
         list: {}
-    }
+    },
+    data() {
+        return {
+            activeLink: 0
+        }
+    },
+    methods: {
+        setLink(id) {
+            // this.activeLink = this.list.findIndex((item) => id === item.id);
+            if (id === undefined) {
+                return
+            }
+            this.activeLink = id;
+
+
+        }
+    },
 }
 </script>
 

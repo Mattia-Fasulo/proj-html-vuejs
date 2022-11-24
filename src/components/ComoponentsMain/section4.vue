@@ -21,38 +21,46 @@ export default {
     data() {
         return {
             store,
+            activeLink: 0,
             menuLink: [
                 {
+                    id: 0,
                     text: "All",
                     url: "#",
                     current: true
                 },
                 {
+                    id: 1,
                     text: "Istitutional",
                     url: "#",
                     current: false
                 },
                 {
+                    id: 3,
                     text: "Social",
                     url: "#",
                     current: false
                 },
                 {
+                    id: 4,
                     text: "Events",
                     url: "#",
                     current: false
                 },
                 {
+                    id: 5,
                     text: "Innovation",
                     url: "#",
                     current: false
                 },
                 {
+                    id: 6,
                     text: "Environment",
                     url: "#",
                     current: false
                 },
                 {
+                    id: 7,
                     text: "Technology",
                     url: "#",
                     current: false
@@ -87,7 +95,13 @@ export default {
             ]
         };
     },
-    components: { ListHorizontal, CardImage }
+    components: {
+        ListHorizontal,
+        CardImage
+    },
+    methods: {
+
+    },
 }
 </script>
 
@@ -124,7 +138,8 @@ export default {
             li {
                 a {
                     color: $txt-d-grey;
-                    padding: 0 1.5rem;
+                    padding: 5px 10px;
+                    margin: 0 1.5rem;
                     font-size: 1.2rem;
                     text-transform: uppercase;
 
@@ -134,7 +149,7 @@ export default {
 
                     &.active {
                         padding: 5px 10px;
-                        background-color: #26aeae43;
+                        background-color: $bg-span;
                     }
                 }
             }
