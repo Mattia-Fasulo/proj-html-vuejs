@@ -125,7 +125,7 @@ export default {
                 i {
                     padding: 1rem;
                     border-radius: 50%;
-                    background-color: #26aeae30;
+                    background-color: $bg-span;
                 }
             }
 

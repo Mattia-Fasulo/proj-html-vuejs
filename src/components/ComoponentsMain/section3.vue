@@ -113,7 +113,7 @@ export default {
         span {
             text-transform: none;
             color: $btn-green;
-            background-color: #0583832f;
+            background-color: $bg-span;
             padding: 0 1rem;
         }
     }

@@ -2,8 +2,8 @@
     <section class="section1">
 
         <swiper :style="{
-            '--swiper-navigation-color': '#c0c3d0',
-            '--swiper-pagination-color': '#c0c3d0',
+            '--swiper-navigation-color': '#058283',
+            '--swiper-pagination-color': '#058283',
         }" :speed="600" :parallax="true" :pagination="{ clickable: true }" :navigation="true" :modules="modules"
             :initial-slide="1" class="mySwiper">
             <div slot="container-start" class="parallax-bg" data-swiper-parallax="-60%"></div>
@@ -128,7 +128,7 @@ export default {
             padding: 0 10px;
             margin-left: -10px;
             color: $btn-green;
-            background-color: #26aeae2a;
+            background-color: $bg-span;
             border-radius: 5px;
         }
     }
@@ -201,14 +201,4 @@ export default {
 .swiper3 {
     align-items: flex-end;
 }
-
-
-// .background {
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     z-index: -1;
-// }
 </style>

@@ -1,7 +1,6 @@
 <template>
     <section class="section4">
         <div class="container">
-            <span>We do more for everyone</span>
             <h2>Actions & <span>Projects</span></h2>
             <ListHorizontal :list="this.menuLink" />
             <div class="cards-section4">
@@ -105,13 +104,6 @@ export default {
     .container {
         flex-flow: column;
 
-
-        span {
-            color: $txt-green;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
         h2 {
             margin-top: 2rem;
             font-size: 4rem;
@@ -141,7 +133,7 @@ export default {
 
                     &.active {
                         padding: 5px 10px;
-                        background-color: #26aeae43;
+                        background-color: $bg-span;
                     }
                 }
             }
@@ -156,7 +148,35 @@ export default {
         width: 100%;
 
 
+        .card-image {
 
+            .over {
+                cursor: pointer;
+
+
+
+                p {
+                    display: none;
+                    transition: all 3s ease-in-out;
+                }
+
+                .icons {
+                    display: none;
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.57);
+                }
+
+
+
+                &:hover .icons {
+                    display: block;
+                }
+            }
+
+
+        }
 
 
     }

@@ -2,7 +2,6 @@
     <section class="section5">
         <div class="section5-top">
             <div class="container">
-                <span>What are we doing</span>
                 <h2><span>Result</span> in Numbers</h2>
                 <ListHorizontal :list="links" />
             </div>
@@ -81,7 +80,6 @@ export default {
     height: max-content;
 
     .section5-top {
-        padding-top: 8rem;
         width: 100%;
         height: 600px;
         background-image: url('/images/bg-7.jpg');
@@ -110,7 +108,7 @@ export default {
                     font-weight: 900;
                     text-transform: none;
                     color: white;
-                    background-color: #0583832f;
+                    background-color: $bg-span;
                     padding: 0 1rem;
                 }
             }

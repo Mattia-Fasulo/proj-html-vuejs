@@ -2,7 +2,6 @@
     <section class="section2">
         <div class="container">
             <div class="text-section2">
-                <span>Our Business Areas</span>
                 <h2>Excellence in <span>Service</span></h2>
                 <div class="my-flex">
                     <p>We are leaders in providing consultancy service with a set of cutting-edge technoligies and a
@@ -38,44 +37,59 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use '../../assets/styles/partials/variables' as *;
 @use '../../assets/styles/partials/mixins' as *;
 
-.container {
-    display: block;
-    padding: 7rem 0;
-
-    .cards-section2 {
-        @include center();
-        flex-wrap: wrap;
-        padding: 3rem 0;
-        width: 100%;
-        gap: 1.5rem;
-
-        .my-card {
-            p {
-                width: 100%;
-            }
-        }
-    }
-}
 
 .section2 {
     width: 100%;
     height: max-content;
     background-color: rgba(128, 128, 128, 0.122);
-}
 
+    .container {
+        display: block;
+        padding: 7rem 0;
+
+        .cards-section2 {
+            @include center();
+            flex-wrap: wrap;
+            padding: 3rem 0;
+            width: 100%;
+            gap: 1.5rem;
+
+            .my-card {
+                cursor: pointer;
+
+
+                p {
+                    width: 100%;
+                }
+
+                i {
+                    color: $btn-green;
+                    border-radius: 50%;
+                    padding: 10px;
+                    cursor: pointer;
+                    transition: all 1s ease-out;
+                }
+
+                &:hover i {
+                    background-color: #26aeae4c;
+                    border-radius: 50%;
+                }
+
+                &:hover {
+                    transform: translateY(-10px);
+
+                }
+            }
+        }
+    }
+}
 
 .text-section2 {
 
-
-    span {
-        color: $txt-green;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
 
     h2 {
         margin-top: 2rem;
@@ -85,7 +99,7 @@ export default {
         span {
             text-transform: none;
             color: $btn-green;
-            background-color: #0583832f;
+            background-color: $bg-span;
             padding: 0 1rem;
         }
     }

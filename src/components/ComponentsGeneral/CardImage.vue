@@ -2,7 +2,10 @@
     <div class="card-image" v-for="(item, index) in obj" :key="index">
         <img :src="item.url" alt="project">
         <div class="over">
+            <div class="icons"><i class="fa-regular fa-user"></i> Codings <i class="fa-regular fa-clock"></i> 2 Years
+            </div>
             <span>{{ item.text }}</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </div>
 </template>
@@ -39,16 +42,35 @@ export default {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.242);
+        display: flex;
+        flex-flow: column;
+        justify-content: end;
+        z-index: 10;
+
+
 
         span {
             padding: 1rem;
             text-align: center;
             font-weight: 600;
-            font-size: 1.2rem;
-            position: absolute;
-            bottom: 0;
+            font-size: 1.6rem;
             color: white;
             text-transform: none;
+        }
+
+        p {
+            padding: 1rem;
+            color: rgb(210, 210, 210);
+            text-align: center;
+        }
+
+        .icons {
+            font-size: 1.4rem;
+            color: rgb(210, 210, 210);
+            position: absolute;
+            top: 10px;
+            right: 95px;
+
         }
     }
 }

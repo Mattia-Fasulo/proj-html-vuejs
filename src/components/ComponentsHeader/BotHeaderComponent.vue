@@ -6,7 +6,7 @@
             </div>
             <div ref="navBar" class="my-navbar">
                 <ListHorizontal :list="this.menuLink" />
-                <ButtonGreen :text="'Get In Touch'" />
+                <ButtonGreen :text="'Buy NexGen'" />
             </div>
 
         </div>
@@ -146,6 +146,10 @@ export default {
 
     button {
         margin-left: 2rem;
+        background-color: #0583832f;
+        color: $btn-green;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
     }
 }
 
