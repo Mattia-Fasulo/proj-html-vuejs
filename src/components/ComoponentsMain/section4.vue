@@ -133,7 +133,7 @@ export default {
 
                     &.active {
                         padding: 5px 10px;
-                        background-color: $bg-span;
+                        background-color: #26aeae43;
                     }
                 }
             }
@@ -153,15 +153,18 @@ export default {
             .over {
                 cursor: pointer;
 
-
+                span {
+                    transition: all 1s ease-in-out;
+                }
 
                 p {
-                    display: none;
-                    transition: all 3s ease-in-out;
+
+                    transition: all 1s ease-in-out;
                 }
 
                 .icons {
-                    display: none;
+                    transition: all 1s ease-in-out;
+
                 }
 
                 &:hover {
@@ -170,8 +173,13 @@ export default {
 
 
 
+                &:hover p {
+                    margin-bottom: 30px;
+                }
+
                 &:hover .icons {
                     display: block;
+                    margin-top: 80px;
                 }
             }
 

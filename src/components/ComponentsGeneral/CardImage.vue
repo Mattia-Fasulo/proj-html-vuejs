@@ -29,6 +29,7 @@ export default {
     overflow: hidden;
     width: calc((100% - 4rem) / 3);
     height: 350px;
+    overflow: hidden;
 
     img {
         width: 100%;
@@ -59,6 +60,7 @@ export default {
         }
 
         p {
+            margin-bottom: -80px;
             padding: 1rem;
             color: rgb(210, 210, 210);
             text-align: center;
@@ -68,7 +70,7 @@ export default {
             font-size: 1.4rem;
             color: rgb(210, 210, 210);
             position: absolute;
-            top: 10px;
+            top: -50px;
             right: 95px;
 
         }
