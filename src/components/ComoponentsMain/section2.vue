@@ -63,6 +63,7 @@ export default {
 
 
                 p {
+                    color: $txt-d-grey;
                     width: 100%;
                 }
 
@@ -114,6 +115,9 @@ export default {
         display: flex;
         justify-content: space-between;
 
+        p {
+            color: $txt-d-grey;
+        }
 
         button {
             align-self: flex-end;

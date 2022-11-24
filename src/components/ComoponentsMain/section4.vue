@@ -113,7 +113,7 @@ export default {
                 font-weight: 900;
                 text-transform: none;
                 color: $btn-green;
-                background-color: #0583832f;
+                background-color: $bg-span;
                 padding: 0 1rem;
             }
         }
@@ -125,6 +125,7 @@ export default {
                 a {
                     color: grey;
                     padding: 0 1.5rem;
+                    font-size: 1.2rem;
                     text-transform: uppercase;
 
                     &:hover {
@@ -154,16 +155,16 @@ export default {
                 cursor: pointer;
 
                 span {
-                    transition: all 1s ease-in-out;
+                    transition: all 0.5s ease-in-out;
                 }
 
                 p {
 
-                    transition: all 1s ease-in-out;
+                    transition: all 0.5s ease-in-out;
                 }
 
                 .icons {
-                    transition: all 1s ease-in-out;
+                    transition: all 0.5s ease-in-out;
 
                 }
 
@@ -174,7 +175,7 @@ export default {
 
 
                 &:hover p {
-                    margin-bottom: 30px;
+                    margin-bottom: 10px;
                 }
 
                 &:hover .icons {

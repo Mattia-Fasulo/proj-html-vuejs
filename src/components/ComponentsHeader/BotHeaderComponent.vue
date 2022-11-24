@@ -36,27 +36,133 @@ export default {
                 {
                     text: 'Home',
                     url: '#',
-                    icon: 'fa-solid fa-angle-down'
+                    icon: 'fa-solid fa-angle-down',
+                    drop: [
+                        {
+                            text: 'Home',
+                            url: '#'
+                        },
+                        {
+                            text: 'Service',
+                            url: '#'
+                        },
+                        {
+                            text: 'About',
+                            url: '#'
+                        },
+                        {
+                            text: 'Project',
+                            url: '#'
+                        },
+                        {
+                            text: 'Result',
+                            url: '#'
+                        }
+                    ]
                 },
                 {
                     text: 'Services',
                     url: '#',
-                    icon: 'fa-solid fa-angle-down'
+                    icon: 'fa-solid fa-angle-down',
+                    drop: [
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        }
+                    ]
                 },
                 {
                     text: 'About',
                     url: '#',
-                    icon: 'fa-solid fa-angle-down'
+                    icon: 'fa-solid fa-angle-down',
+                    drop: [
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        }
+                    ]
                 },
                 {
                     text: 'Projects',
                     url: '#',
-                    icon: 'fa-solid fa-angle-down'
+                    icon: 'fa-solid fa-angle-down',
+                    drop: [
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        }
+                    ]
                 },
                 {
                     text: 'Result',
                     url: '#',
-                    icon: 'fa-solid fa-angle-down'
+                    icon: 'fa-solid fa-angle-down',
+                    drop: [
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        },
+                        {
+                            text: 'Home 1',
+                            url: '#'
+                        }
+                    ]
                 }
             ]
         }
@@ -116,12 +222,20 @@ export default {
 
     ul {
         flex-flow: row;
+
     }
 
     li {
         padding-left: 2rem;
 
+        &:hover {
+            .drop-down {
+                display: flex !important;
+            }
+        }
+
         a {
+            padding: 1rem 0;
             color: gray;
             text-decoration: none;
             text-transform: uppercase;
@@ -140,6 +254,12 @@ export default {
             span {
                 color: #058283;
             }
+
+
+        }
+
+        .drop-down {
+            display: none !important;
         }
 
     }

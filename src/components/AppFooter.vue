@@ -8,7 +8,7 @@
                     <span><i class="fa-solid fa-phone"></i> +1 (305) 1234-5678</span>
                     <span><i class="fa-solid fa-envelope"></i> hello@example.com</span>
                     <span><i class="fa-solid fa-location-dot"></i> Main Avenue, 897</span>
-                    <ButtonGreen :text="'Get In Touch'" />
+                    <ButtonGreen :text="'Buy NexGen'" />
                 </div>
                 <div class="footer-list">
                     <ListVertical :title="store.titleMenuOne" :list="store.linkMenuOne" />
@@ -87,21 +87,27 @@ footer {
     p {
         padding: 1.5rem 0 1rem;
         margin-bottom: 0;
+        color: $txt-grey;
     }
 
     span {
         padding: 0.5rem 0;
+        color: $txt-grey;
 
         i {
+            color: $txt-grey;
             margin-right: 10px;
         }
     }
 
     button {
+        color: $txt-grey;
         margin-top: 1.5rem;
         width: max-content;
         border: 1px solid $btn-green;
         background-color: transparent;
+        border-radius: 25px;
+
     }
 
 }
@@ -113,8 +119,11 @@ ul {
     }
 
     li {
+        color: $txt-grey;
+
         a {
             color: $txt-grey;
+
         }
 
         a:hover {

@@ -50,6 +50,17 @@ export default {
     width: 100%;
 }
 
+
+.timetable {
+    span {
+        cursor: pointer;
+    }
+
+    &:hover {
+        color: $btn-green;
+    }
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -65,11 +76,23 @@ export default {
         margin-bottom: 0;
 
         li {
+            cursor: pointer;
             padding-left: 2rem;
 
             i {
+                cursor: pointer;
                 margin-right: 10px;
+
+                &:hover {
+                    color: $btn-green;
+                }
             }
+
+            &:hover {
+                color: $btn-green;
+            }
+
+
         }
     }
 }

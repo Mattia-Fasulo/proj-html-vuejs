@@ -69,6 +69,10 @@ export default {
         .container-left {
             width: 65%;
 
+            p {
+                color: $txt-d-grey;
+            }
+
             .form {
                 @include center('horizontal');
                 gap: 1rem;
@@ -114,6 +118,7 @@ export default {
             }
 
             p {
+                color: $txt-d-grey;
                 font-size: 1.2rem;
             }
 

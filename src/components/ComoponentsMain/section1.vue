@@ -110,7 +110,7 @@ export default {
 .swiper {
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgb(230, 229, 229);
 
     &:hover {
         cursor: e-resize;
@@ -143,7 +143,7 @@ export default {
 .swiper-slide {
     @include center();
     flex-flow: column;
-    color: gray;
+    color: $txt-d-grey;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
