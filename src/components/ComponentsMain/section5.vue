@@ -27,7 +27,7 @@ export default {
                 {
                     text: "Certification",
                     ulr: "#",
-                    num: 128
+                    num: 20
                 },
                 {
                     text: "Employees",
